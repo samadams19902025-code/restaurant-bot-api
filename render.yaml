@@ -1,0 +1,31 @@
+# render.yaml — Render Blueprint
+# Push this to your repo root, then on Render: New > Blueprint > connect repo
+
+databases:
+  - name: restaurant-bot-db
+    plan: free
+    databaseName: restaurant_bot
+    user: botuser
+
+services:
+  - type: web
+    name: restaurant-bot-api
+    runtime: python
+    plan: free
+    buildCommand: |
+      chmod +x build.sh && ./build.sh
+    startCommand: |
+      cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false  # you set this manually in Render dashboard
+      - key: DATABASE_URL
+        fromDatabase:
+          name: restaurant-bot-db
+          property: connectionString
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: DEFAULT_MODEL
+        value: claude-sonnet-4-20250514
+      - key: PYTHON_VERSION
+        value: "3.11"
