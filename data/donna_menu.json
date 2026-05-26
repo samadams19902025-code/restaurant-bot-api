@@ -1,0 +1,224 @@
+{
+  "restaurant": {
+    "slug": "donna-leipzig",
+    "name": "Donna – Pizzeria Ristorante",
+    "address": "Leipzig, Germany",
+    "phone": "+49 341 XXXXXXX",
+    "website": "https://donna-leipzig.de",
+    "languages": ["de", "en", "it"],
+    "timezone": "Europe/Berlin",
+    "opening_hours": {
+      "mon": {"open": "11:30", "close": "22:00"},
+      "tue": {"open": "11:30", "close": "22:00"},
+      "wed": {"open": "11:30", "close": "22:00"},
+      "thu": {"open": "11:30", "close": "22:00"},
+      "fri": {"open": "11:30", "close": "23:00"},
+      "sat": {"open": "12:00", "close": "23:00"},
+      "sun": {"open": "12:00", "close": "22:00"}
+    },
+    "system_prompt": "You are the virtual assistant for Donna, an authentic Italian pizzeria and restaurant in Leipzig. Be warm and welcoming, like a friendly Italian host. Use casual but professional tone. If someone greets in Italian, respond in Italian. Recommend our wood-fired pizzas as our specialty. Mention that we use imported Italian ingredients.",
+    "config": {
+      "max_party_size": 12,
+      "default_duration_minutes": 90,
+      "advance_booking_days": 30
+    }
+  },
+  "tables": [
+    {"table_number": 1, "capacity": 2, "location": "indoor"},
+    {"table_number": 2, "capacity": 2, "location": "indoor"},
+    {"table_number": 3, "capacity": 4, "location": "indoor"},
+    {"table_number": 4, "capacity": 4, "location": "indoor"},
+    {"table_number": 5, "capacity": 6, "location": "indoor"},
+    {"table_number": 6, "capacity": 6, "location": "indoor"},
+    {"table_number": 7, "capacity": 8, "location": "indoor"},
+    {"table_number": 8, "capacity": 4, "location": "outdoor"},
+    {"table_number": 9, "capacity": 4, "location": "outdoor"},
+    {"table_number": 10, "capacity": 6, "location": "outdoor"}
+  ],
+  "menu": [
+    {
+      "category": "antipasti",
+      "name": "Bruschetta Classica",
+      "description": "Toasted bread with fresh tomatoes, garlic, basil, and extra virgin olive oil",
+      "price": 6.90,
+      "allergens": ["gluten"],
+      "tags": ["vegan"]
+    },
+    {
+      "category": "antipasti",
+      "name": "Burrata con Pomodorini",
+      "description": "Creamy burrata with cherry tomatoes, basil, and aged balsamic",
+      "price": 11.90,
+      "allergens": ["dairy"],
+      "tags": ["vegetarian", "popular"]
+    },
+    {
+      "category": "antipasti",
+      "name": "Antipasto Misto",
+      "description": "Selection of Italian cured meats, cheeses, olives, and grilled vegetables",
+      "price": 14.50,
+      "allergens": ["dairy"],
+      "tags": []
+    },
+    {
+      "category": "pizza",
+      "name": "Margherita",
+      "description": "San Marzano tomato, fior di latte mozzarella, fresh basil",
+      "price": 9.50,
+      "allergens": ["gluten", "dairy"],
+      "tags": ["vegetarian", "popular"]
+    },
+    {
+      "category": "pizza",
+      "name": "Diavola",
+      "description": "Tomato, mozzarella, spicy salami, chili flakes",
+      "price": 11.50,
+      "allergens": ["gluten", "dairy"],
+      "tags": ["spicy", "popular"]
+    },
+    {
+      "category": "pizza",
+      "name": "Quattro Formaggi",
+      "description": "Mozzarella, gorgonzola, parmigiano, fontina",
+      "price": 12.50,
+      "allergens": ["gluten", "dairy"],
+      "tags": ["vegetarian"]
+    },
+    {
+      "category": "pizza",
+      "name": "Prosciutto e Rucola",
+      "description": "Tomato, mozzarella, prosciutto crudo, rocket, parmesan shavings",
+      "price": 13.50,
+      "allergens": ["gluten", "dairy"],
+      "tags": ["popular"]
+    },
+    {
+      "category": "pizza",
+      "name": "Marinara",
+      "description": "San Marzano tomato, garlic, oregano, extra virgin olive oil — no cheese",
+      "price": 8.50,
+      "allergens": ["gluten"],
+      "tags": ["vegan"]
+    },
+    {
+      "category": "pizza",
+      "name": "Bufala e Pomodorini",
+      "description": "Buffalo mozzarella, cherry tomatoes, basil, olive oil",
+      "price": 13.90,
+      "allergens": ["gluten", "dairy"],
+      "tags": ["vegetarian"]
+    },
+    {
+      "category": "primi",
+      "name": "Spaghetti Carbonara",
+      "description": "Guanciale, egg yolk, pecorino romano, black pepper — the Roman way",
+      "price": 13.50,
+      "allergens": ["gluten", "dairy", "eggs"],
+      "tags": ["popular"]
+    },
+    {
+      "category": "primi",
+      "name": "Penne all'Arrabbiata",
+      "description": "Tomato sauce, garlic, chili, fresh parsley",
+      "price": 10.50,
+      "allergens": ["gluten"],
+      "tags": ["vegan", "spicy"]
+    },
+    {
+      "category": "primi",
+      "name": "Risotto ai Funghi Porcini",
+      "description": "Carnaroli rice, porcini mushrooms, parmigiano, truffle oil",
+      "price": 14.90,
+      "allergens": ["dairy"],
+      "tags": ["vegetarian", "popular"]
+    },
+    {
+      "category": "primi",
+      "name": "Lasagna della Nonna",
+      "description": "Homemade layers with ragù, béchamel, mozzarella, parmigiano",
+      "price": 13.90,
+      "allergens": ["gluten", "dairy", "eggs"],
+      "tags": ["popular"]
+    },
+    {
+      "category": "secondi",
+      "name": "Saltimbocca alla Romana",
+      "description": "Veal escalopes with prosciutto, sage, white wine sauce",
+      "price": 18.50,
+      "allergens": ["dairy"],
+      "tags": []
+    },
+    {
+      "category": "secondi",
+      "name": "Branzino al Forno",
+      "description": "Oven-baked sea bass with lemon, capers, cherry tomatoes",
+      "price": 19.90,
+      "allergens": ["fish"],
+      "tags": []
+    },
+    {
+      "category": "dolci",
+      "name": "Tiramisù",
+      "description": "Classic tiramisu with mascarpone, espresso, cocoa",
+      "price": 7.50,
+      "allergens": ["dairy", "eggs", "gluten"],
+      "tags": ["popular"]
+    },
+    {
+      "category": "dolci",
+      "name": "Panna Cotta",
+      "description": "Vanilla panna cotta with mixed berry coulis",
+      "price": 6.90,
+      "allergens": ["dairy"],
+      "tags": ["vegetarian"]
+    },
+    {
+      "category": "dolci",
+      "name": "Sorbetto al Limone",
+      "description": "Homemade lemon sorbet",
+      "price": 5.50,
+      "allergens": [],
+      "tags": ["vegan"]
+    },
+    {
+      "category": "bevande",
+      "name": "Acqua Minerale",
+      "description": "Still or sparkling, 0.75L",
+      "price": 3.50,
+      "allergens": [],
+      "tags": []
+    },
+    {
+      "category": "bevande",
+      "name": "Chianti Classico (Bicchiere)",
+      "description": "Glass of Chianti Classico DOCG",
+      "price": 6.50,
+      "allergens": [],
+      "tags": []
+    },
+    {
+      "category": "bevande",
+      "name": "Aperol Spritz",
+      "description": "Aperol, Prosecco, soda, orange slice",
+      "price": 8.50,
+      "allergens": [],
+      "tags": ["popular"]
+    }
+  ],
+  "faqs": [
+    {"question": "Wo kann ich parken?", "answer": "Es gibt Straßenparkplätze in der Nähe und ein Parkhaus 5 Minuten zu Fuß entfernt.", "language": "de", "category": "parking"},
+    {"question": "Habt ihr vegane Optionen?", "answer": "Ja! Wir haben vegane Pizzen (Marinara), Bruschetta, Penne all'Arrabbiata und Sorbetto al Limone.", "language": "de", "category": "dietary"},
+    {"question": "Kann man bei euch auch draußen sitzen?", "answer": "Ja, wir haben eine Terrasse mit Platz für ca. 14 Gäste, wetterabhängig.", "language": "de", "category": "general"},
+    {"question": "Gibt es glutenfreie Pizza?", "answer": "Aktuell bieten wir keinen glutenfreien Teig an, aber viele unserer Antipasti, Primi (Risotto) und Secondi sind glutenfrei.", "language": "de", "category": "dietary"},
+    {"question": "Do you take reservations?", "answer": "Yes! You can book directly through this chat. Just tell me the date, time, and how many guests.", "language": "en", "category": "reservation"},
+    {"question": "Accettate prenotazioni per gruppi?", "answer": "Sì, accettiamo prenotazioni fino a 12 persone. Per gruppi più grandi, contattateci direttamente.", "language": "it", "category": "reservation"}
+  ],
+  "reviews": [
+    {"source": "google", "rating": 5.0, "text": "Best pizza in Leipzig! The Margherita is absolutely perfect.", "dishes_mentioned": ["margherita"], "sentiment": "positive", "date": "2026-03-15"},
+    {"source": "google", "rating": 5.0, "text": "Die Carbonara schmeckt wie in Rom. Burrata als Vorspeise ist ein Muss!", "dishes_mentioned": ["spaghetti carbonara", "burrata con pomodorini"], "sentiment": "positive", "date": "2026-04-02"},
+    {"source": "google", "rating": 4.0, "text": "Lovely atmosphere, the Diavola pizza was spicy and delicious. Tiramisu was heavenly.", "dishes_mentioned": ["diavola", "tiramisù"], "sentiment": "positive", "date": "2026-02-20"},
+    {"source": "tripadvisor", "rating": 5.0, "text": "Prosciutto e Rucola pizza — best I've had outside Italy. Risotto was also excellent.", "dishes_mentioned": ["prosciutto e rucola", "risotto ai funghi porcini"], "sentiment": "positive", "date": "2026-01-10"},
+    {"source": "google", "rating": 4.0, "text": "Great Aperol Spritz and the lasagna was like nonna makes it.", "dishes_mentioned": ["aperol spritz", "lasagna della nonna"], "sentiment": "positive", "date": "2026-04-18"},
+    {"source": "google", "rating": 3.0, "text": "Food was good but had to wait 40 minutes for our pizza on a Saturday night.", "dishes_mentioned": [], "sentiment": "mixed", "date": "2026-03-22"}
+  ]
+}
